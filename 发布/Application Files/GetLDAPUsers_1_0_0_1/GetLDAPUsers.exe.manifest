@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="GetLDAPUsers.exe" version="1.0.0.1" publicKeyToken="dad296df3c0084d7" language="neutral" processorArchitecture="x86" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="GetLDAPUsers" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="GetLDAPUsers.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC 清单选项
+          如果要更改 Windows 用户帐户控制级别，请用以下节点之一替换
+          requestedExecutionLevel 节点。
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+          如果要利用文件和注册表虚拟化提供
+          向后兼容性，请删除 requestedExecutionLevel 节点。
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GetLDAPUsers.exe" size="15872">
+      <assemblyIdentity name="GetLDAPUsers" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>n6F5fajrMN8JgEOat/TELvpaMFmItm4emSCod60094A=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.RTXServerApi.dll" size="14848">
+      <assemblyIdentity name="Interop.RTXServerApi" version="3.3.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>gwlW3SDq8Kpg5uEw94z54qs/hQ0aPRLleOlILDPq2kc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="GetLDAPUsers.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xm4bo26HQ0LNVwz1vdPYtzhkpMnp2AI5i+f0b+OahTI=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=KUGOU\shiyazhao" issuerKeyHash="baa49ce78e6800a3bcc627b93c8d884807b6f808" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>ortbZOkxRtdNSEF8p+ZY2eihYI2DGu4WS11nx1bSjuQ=</DigestValue></Reference></SignedInfo><SignatureValue>aZLVagrwKh5BnEItorqfjK0LOP3UWYASSkPmGTQM7nW+3QIf9FVzsh08maUBEwcnDuMnFzWqMix+SsQKnjrpsLYvGJ8M5BJxrh9WCB2gCD/XZs7wMThLVxmvl7P+8hx2R6Ljuoyxx9mKf6L8SJzJRnJpRm9QKwLeJnLt4nXxwCE=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>qdfP1IMZhsX90hSNBK8ea5P3NpfrARv+uE9ljm559B2ChbgtPeJpV0eQNPKmzk1wYbpYtQIsJLAj5NjUYZwJ7IfmAJz0u2IcZOEulnIrlCo0vpsRiW72OYrJTVDg8hUsylKh5a5jxOB3lldfl3uUk0Hgp7bc3ktGvMH5Lybaojs=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="e48ed256c7675d4b16ee1a838d60a1e8d958e6a77c41484dd74631e9645bbba2" Description="" Url=""><as:assemblyIdentity name="GetLDAPUsers.exe" version="1.0.0.1" publicKeyToken="dad296df3c0084d7" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=KUGOU\shiyazhao</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>2vdVGIvaBPjRUbj3MoSc+LVssSEk/2vI11bHx8yQhZI=</DigestValue></Reference></SignedInfo><SignatureValue>mnnbT0FeY+QXXeA+1C0iarHcSS3Kz5UiinvhaawEUx6xAbb8l2U6gacBT/SuXYLJfLtFptBXqAZh/K98FKX4PvPrqG4SeSWayDHDkSVz0l/58jOKdMmS/r/Z9BuCKYZHDrPMS5Tb+gKIWAReHSe74qPSHu5/4QL14tQd/2vZyZY=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>qdfP1IMZhsX90hSNBK8ea5P3NpfrARv+uE9ljm559B2ChbgtPeJpV0eQNPKmzk1wYbpYtQIsJLAj5NjUYZwJ7IfmAJz0u2IcZOEulnIrlCo0vpsRiW72OYrJTVDg8hUsylKh5a5jxOB3lldfl3uUk0Hgp7bc3ktGvMH5Lybaojs=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB1TCCAT6gAwIBAgIQUNb3teWWd6pHUDF6hNmgMjANBgkqhkiG9w0BAQsFADApMScwJQYDVQQDHh4ASwBVAEcATwBVAFwAcwBoAGkAeQBhAHoAaABhAG8wHhcNMTQwNzMxMDUwOTQ1WhcNMTUwNzMxMTEwOTQ1WjApMScwJQYDVQQDHh4ASwBVAEcATwBVAFwAcwBoAGkAeQBhAHoAaABhAG8wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKnXz9SDGYbF/dIUjQSvHmuT9zaX6wEb/rhPZY5uefQdgoW4LT3iaVdHkDTyps5NcGG6WLUCLCSwI+TY1GGcCeyH5gCc9LtiHGThLpZyK5QqNL6bEYlu9jmKyU1Q4PIVLMpSoeWuY8Tgd5ZXX5d7lJNB4Ke23N5LRrzB+S8m2qI7AgMBAAEwDQYJKoZIhvcNAQELBQADgYEAKx5M5rpteyZWAheXSQ9096cRpwKyyE+JYLglzFmJowMIfT8dEGFsd+b+XVWmYhSy63TdZtudsA4/NnkDIMWLFZz8HYuFN3xEfG1OX6+CQgww2xtx21S/5Tyt50K+9G3OyzQDWpDf7c5GsUcdam3qCV+A4puGGPT64B0736GN9cQ=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
